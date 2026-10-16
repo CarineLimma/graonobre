@@ -712,7 +712,7 @@ footer {
         font-size: 0.75rem;
     }
 
-    /* ESSÊNCIA */
+ 
     .essencia {
         grid-template-columns: minmax(0, 1fr);
         gap: 30px;
@@ -905,7 +905,7 @@ footer {
         font-size: 1.6rem;
     }
 }
-/* TABLETS */
+
 
 @media (max-width: 1000px) {
     .navbar {
@@ -927,7 +927,7 @@ footer {
     }
 }
 
-/* CELULARES */
+
 
 @media (max-width: 700px) {
     .site-header {
