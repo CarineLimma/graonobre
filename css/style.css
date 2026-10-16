@@ -1,0 +1,564 @@
+:root {
+    --preto: #100b09;
+    --marrom: #302016;
+    --caramelo: #b18a6c;
+    --bege: #ede0cf;
+    --creme: #f4e9df;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background: var(--preto);
+  color: var(--creme);
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.site-header{
+  position: relative;
+  z-index: 10;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 22px 6%;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+
+}
+
+.logo{
+
+  color: var(--caramelo);
+  font-family: 'Bodoni Moda', serif;
+  font-size: 1.6rem;
+  white-space: nowrap;
+
+}
+
+.menu{
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu a{
+  color: var(--creme);
+  font-size: 0.82rem;
+  transition: color 0.3s;
+}
+
+.menu a:hover{
+  color: var(--caramelo);
+
+}
+
+.navbar .btn{
+  padding: 11px 20px;
+  border: 1px solid var(--caramelo);
+  color: var(--creme);
+  font-size: 0.78rem;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar .btn:hover{
+  color: var(--caramelo);
+  border-color: var(--preto);
+}
+
+.hero{
+  width: 100%;
+  min-height: 650px;
+  aspect-ratio: 16 / 9;
+
+
+  background-image: url('./img/hero.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+   
+  padding: 100px 7% 60px;
+}
+
+.hero-content{
+  max-width: 550px;
+}
+
+.hero-label{
+  color: #d4b08c;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.hero h1{
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(4rem, 7vw, 7rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: var(--caramelo);
+  margin: 25px 0;
+}
+
+.hero p{
+  font-size: 18px;
+  color: #e8dcd0;
+  border-bottom: 1 px solid #c49a77;
+  color: #c49a77;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.hero-btn:hover{
+  color: white;
+  border-color: white;
+}
+
+.destaque{
+  display: grid;
+  grid-template-columns: repeat (4,1fr);
+  gap: 15px;
+  padding: 28px 6%;
+  background: #090605;
+  border-top: 1 px solid #38251b;
+  text-align: center; 
+}
+
+.destaque .item{
+  font-size: 0.85rem;
+  color: #d4c8b8;
+}
+
+.essencia{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+ gap: 70px;
+ padding: 100px 8%;
+ background: var(--bege);
+ color: #39251b;
+}
+
+.section-label{
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #b19a6c;
+}
+
+.essencia h2,
+.ambiente h2,
+.section-heading h2,
+.newsletter h2,
+.encerramento h2 {
+  font-family: 'Bodoni Moda',serif;
+  font-size: clamp(2.7rem, 5vw, 5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 20px 0;
+  
+}
+
+.essencia p,
+.ambiente p{
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 20px
+}
+
+.essencia p{
+  color: #624a3c;
+}
+
+.essencia-imagem img{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 6px;
+
+}
+
+.link-elegente{
+  display: inline-block;
+  margin-top: 15px;
+  color: #a16f4e;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 8px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-heading{
+  max-width: 750px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.section-heading p{
+  color: #cbb9a9;
+  line-height: 1.8;
+}
+
+.favoritos{
+  padding: 100px 7%;
+  background: #17100d;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 22px;
+}
+
+.produto-img{
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #302016;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prduto-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+   transition: transform 0.5s;
+}
+
+.produto:hover img{
+  transform: scale(1.07);
+}
+
+.produto-info{
+  padding: 18px 2;
+}
+
+.produto-inf span{
+  color: var(--caramelo);
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.produto-inf h3{
+  font-family: 'Bodoni Moda', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.produto-inf p{
+  color:#cbb9a9;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.momento-noir{
+  padding: 100px 7%;
+  background: var(--marrom);
+
+}
+
+.momento-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 20px;
+}
+.momento-card{
+  padding: 25px 28px;
+  border: 1px solid #80634c;
+  background: rgba(0,0,0,0.13);
+  transition: 0.3s;
+}
+.momento-card:hover{
+  transform: translateY(-7px);
+  border-color: #d4a77f;
+}
+
+.moomento-numero{
+  color:#d2a47c;
+  font-family:'Bodoni Moda',serif;
+  font-size: 2rem;
+}
+
+.momento-card h3{
+  font-family: 'Bodoni Moda',serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 22px 0 12px;
+}
+
+.momento-card p{
+  color: #d8c7b7;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.momento-cafe{
+  display: inline-block;
+  margin-top: 25px;
+  color: #dfb48c;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.ambiente{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+  padding: 100px 8%;
+  background: #f0e6d8;
+  color: #39251b;
+}
+
+.ambiente img img{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.ambiente p{
+  color: #624a3c;
+}
+
+.rituais{
+  padding: 100px 7%;
+  background: #17100d;
+
+}
+
+.rituais-grid{
+  display: grid;
+ grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 35px;
+
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ritual-img{
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px
+}
+
+.ritual-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.ritual-card:hover img{
+  transform: scale(1.06);
+}
+.ritual-card >span{
+  color: var(--caramelo);
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.ritual-card h3{
+  font-family: 'Bodoni Moda',serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.ritual-card p{
+  color: #cbb9a9;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.ritual-card p {
+    color: #cbb9a9;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+.newsletter {
+    padding: 100px 7%;
+    background: var(--marrom);
+    text-align: center;
+}
+
+.newsletter-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.newsletter p {
+    color: #e0cdbd;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.newsletter input {
+    flex: 1;
+    min-width: 0;
+    padding: 15px 18px;
+    border: 1px solid #9b7b61;
+    border-radius: 4px;
+    background: var(--creme);
+    color: var(--marrom);
+}
+
+.newsletter button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 4px;
+    background: var(--caramelo);
+    color: var(--preto);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background: #e0b58f;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+
+.encerramento {
+    padding: 110px 7%;
+    background: var(--preto);
+    text-align: center;
+}
+
+.encerramento-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.encerramento p {
+    color: #d8c7b7;
+    margin-bottom: 30px;
+}
+
+
+.footer {
+    padding: 40px 7%;
+    background: #0b0807;
+    text-align: center;
+    border-top: 1px solid #38261b;
+}
+
+.footer-logo {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--caramelo);
+    margin-bottom: 15px;
+}
+
+.footer-copy,
+.footer-dev {
+    color: #a99a8c;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.footer-dev a {
+    color: var(--caramelo);
+}
+
+.footer-dev a:hover {
+    color: white;
+}
+
+.link{
+  color: var(--caramelo);
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 4px;
+  transition: color 0.3s;
+}
+
+@media (min-width: 1024px) {
+
+    .momento-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        align-items: stretch;
+    }
+
+    .momento-card {
+        padding: 25px 28px;
+        min-height: 0;
+        height: auto;
+    }
+
+    .momento-card h3 {
+        font-size: 1.6rem;
+        margin: 15px 0 10px;
+    }
+
+    .momento-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
