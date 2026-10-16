@@ -562,3 +562,476 @@ input {
         line-height: 1.6;
     }
 }
+
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+section,
+footer {
+    max-width: 100%;
+}
+
+.grid > *,
+.rituais-grid > *,
+.essencia > *,
+.ambiente > * {
+    min-width: 0;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 20px 4%;
+        gap: 12px;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 0.72rem;
+    }
+
+    .navbar .btn {
+        padding: 10px 12px;
+        font-size: 0.7rem;
+    }
+
+    .hero {
+        min-height: 550px;
+        aspect-ratio: auto;
+        background-size: cover;
+        padding: 110px 6% 60px;
+    }
+
+    .essencia,
+    .ambiente {
+        gap: 35px;
+        padding: 75px 6%;
+    }
+
+    .favoritos,
+    .rituais,
+    .momento-noir,
+    .newsletter,
+    .encerramento {
+        padding: 75px 6%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px;
+    }
+
+    .rituais-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+   
+    .navbar {
+        position: relative;
+        width: 100%;
+        padding: 18px 6%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #100b09;
+    }
+
+    .logo {
+        font-size: 1.65rem;
+        text-align: center;
+    }
+
+    .menu,
+    .navbar .btn {
+        display: none;
+    }
+
+   
+    .hero {
+        width: 100%;
+        min-height: 560px;
+        aspect-ratio: auto;
+        padding: 65px 7% 55px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 11vw, 4.5rem);
+        line-height: 1.05;
+        letter-spacing: -1px;
+        max-width: 100%;
+    }
+
+    .hero-label {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .hero p {
+        font-size: 12px;
+        line-height: 1.7;
+        letter-spacing: 1.5px;
+    }
+
+  
+    .destaque {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        padding: 28px 6%;
+    }
+
+    .destaque .item {
+        font-size: 0.75rem;
+    }
+
+    /* ESSÊNCIA */
+    .essencia {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+        padding: 65px 7%;
+    }
+
+    .essencia h2 {
+        font-size: clamp(2.7rem, 10vw, 3.7rem);
+        line-height: 1.1;
+    }
+
+    .essencia p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .essencia-imagem {
+        width: 100%;
+    }
+
+    .essencia-imagem img {
+        width: 100%;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+ 
+    .favoritos {
+        padding: 65px 6%;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(2.5rem, 9vw, 3.5rem);
+        line-height: 1.1;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 14px;
+    }
+
+    .produto {
+        min-width: 0;
+    }
+
+    .produto-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+    }
+
+    .produto-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .produto-info,
+    .produto-inf {
+        padding: 14px 0;
+        min-width: 0;
+        overflow-wrap: break-word;
+    }
+
+    .produto-info span,
+    .produto-inf span {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .produto-info h3,
+    .produto-inf h3 {
+        font-size: 1.35rem;
+        line-height: 1.2;
+        margin: 8px 0;
+    }
+
+    .produto-info p,
+    .produto-inf p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+  
+    .momento-noir {
+        padding: 65px 7%;
+    }
+
+    .momento-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .momento-card {
+        padding: 25px 22px;
+    }
+
+    .momento-card h3 {
+        font-size: 1.7rem;
+    }
+
+ 
+    .ambiente {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+        padding: 65px 7%;
+    }
+
+    .ambiente h2 {
+        font-size: clamp(2.7rem, 10vw, 3.7rem);
+    }
+
+    .ambiente img,
+    .ambiente img img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .ambiente p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    
+    .rituais {
+        padding: 65px 6%;
+    }
+
+    .rituais-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 35px;
+    }
+
+    .ritual-img {
+        aspect-ratio: 4 / 4;
+    }
+
+    .ritual-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .newsletter {
+        padding: 65px 7%;
+    }
+
+    .newsletter h2 {
+        font-size: clamp(2.5rem, 9vw, 3.5rem);
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        width: 100%;
+        min-height: 48px;
+    }
+
+   
+    .encerramento {
+        padding: 75px 7%;
+    }
+
+    .encerramento h2 {
+        font-size: clamp(2.5rem, 9vw, 3.7rem);
+    }
+
+   
+    .footer {
+        padding: 35px 7%;
+    }
+
+    .footer-logo {
+        font-size: 1.6rem;
+    }
+}
+/* TABLETS */
+
+@media (max-width: 1000px) {
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .essencia,
+    .ambiente {
+        gap: 35px;
+        padding: 75px 6%;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 700px) {
+    .site-header {
+        position: relative;
+        background: var(--preto);
+    }
+
+    .navbar {
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 16px 5%;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 15px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .navbar .btn {
+        display: none;
+    }
+
+    .hero {
+        aspect-ratio: auto;
+        min-height: 590px;
+        background-size: contain;
+        background-position: center top;
+        align-items: flex-end;
+        padding: 250px 6% 55px;
+        position: relative;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to top,
+            #100b09 8%,
+            rgba(16, 11, 9, 0.86) 35%,
+            transparent 80%
+        );
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(3.5rem, 12vw, 5rem);
+    }
+
+    .destaques {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .essencia,
+    .ambiente {
+        grid-template-columns: 1fr;
+        padding: 65px 6%;
+    }
+
+    .essencia-imagem img,
+    .ambiente-img img {
+        height: 320px;
+    }
+
+    .favoritos,
+    .momento-noir,
+    .rituais {
+        padding: 70px 6%;
+    }
+
+    .momentos-grid,
+    .rituais-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
